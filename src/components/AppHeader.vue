@@ -109,7 +109,7 @@ header {
                 }
     
                 &.active {
-                    border-bottom: 5px solid #0F86F9;
+                    border-bottom: 4px solid #0F86F9;
                     color: #0F86F9;
                     
                 }
