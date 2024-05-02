@@ -35,18 +35,21 @@ export default{
 </script>
 
 <template>
-    <section class="content">
-        <h2> __> Content goes here <-- </h2>
-    </section>
-    <section class="sections">
-        <ul>
-            <li v-for="item in sections">
-                <img :src="getImagePath(item.product)" alt="">
-                <a href="">{{ item.title }}</a>
-            </li>
-            
-        </ul>
-    </section>
+    <main>
+        <section class="content">
+            <h2> __> Content goes here <-- </h2>
+        </section>
+        <section class="sections">
+            <ul>
+                <li v-for="item in sections">
+                    <img :src="getImagePath(item.product)" alt="">
+                    <a href="">{{ item.title }}</a>
+                </li>
+                
+            </ul>
+        </section>
+
+    </main>
 
 </template>
 

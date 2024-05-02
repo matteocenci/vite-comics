@@ -1,17 +1,39 @@
 <script>
-    export default {
-        data() {
-            return {
-
-            }
+export default {
+    data() {
+        return {
+            footer: [
+                {
+                    title: "DC COMICS",
+                    list: list1
+                },
+                {
+                    title: "SHOP",
+                    list: list2
+                },
+                {
+                    title: "DC",
+                    list: list3
+                },
+                {
+                    title: "SITES",
+                    list: list4
+                }
+            ]
         }
     }
+}
 </script>
 
 <template>
-    <h3>Footer</h3>
+    <footer>
+        <div class="utilities">
+            <p>Hello</p>
+        </div>
+    </footer>
 </template>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
+@use "../style/partials/mixin" as *;
 
 </style>
