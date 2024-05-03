@@ -1,4 +1,6 @@
 <script>
+
+
 export default {
     data() {
         return {
@@ -21,19 +23,22 @@ export default {
                 }
             ]
         }
-    }
+    },
+    
+    
+    
 }
 </script>
 
 <template>
-    <footer>
-        <div class="utilities">
-            <p>Hello</p>
-        </div>
-    </footer>
+    
 </template>
 
 <style scoped lang="scss">
 @use "../style/partials/mixin" as *;
+
+
+
+
 
 </style>

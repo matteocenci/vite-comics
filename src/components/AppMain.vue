@@ -1,4 +1,7 @@
 <script>
+import { list1, list2, list3, list4 } from '../assets/data/lists-footer';
+
+
 export default{
     data() {
         return {
@@ -20,8 +23,26 @@ export default{
                     title: "COMIC SHOP LOCATOR"
                 },
                 {
-                    products: "buy-dc-power-visa.svg",
+                    product: "buy-dc-power-visa.svg",
                     title: "DC POWER VISA"
+                }
+            ],
+            footer: [
+                {
+                    title: "DC COMICS",
+                    list: list1
+                },
+                {
+                    title: "SHOP",
+                    list: list2
+                },
+                {
+                    title: "DC",
+                    list: list3
+                },
+                {
+                    title: "SITES",
+                    list: list4
                 }
             ]
         }
@@ -49,6 +70,24 @@ export default{
             </ul>
         </section>
 
+        <section class="utilities">
+            <div class="info">
+                <ul class="father">
+                    <li v-for="menu in footer">
+                        <h4>{{ menu.title }}</h4>
+                        <ul>
+                            <li v-for="item in menu.list"><a href="">{{ item }}</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+
+            </div>
+            <div class="logo">
+
+            </div>
+        </section>
+
     </main>
 
 </template>
@@ -57,7 +96,7 @@ export default{
 @use "../style/partials/mixin" as *;
 
 .content {
-    margin-top: 2rem;
+    
     padding: 2rem 0;
     padding-left: 10.5rem;
     background-color: black;
@@ -68,6 +107,7 @@ export default{
 }
 
 .sections {
+    
     background-color: #0F86F9;
     padding: 15px;
     ul {
@@ -88,10 +128,51 @@ export default{
     }
 
     img {
-        max-width: 10%;
+        max-width: 40px;
+        margin-left: 70px;
     }
 }
 
+.utilities {
+    @include flex(row, left, center);
+    width: 100%;
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-repeat:no-repeat;
+    
+    
+    
+    
+    .info {
+        width: 50%;
+        .father{
+            @include flex (row, center, start);
+            flex-wrap: wrap;
+            padding: 70px;
+
+            li {
+                @include flex(column, left, left);
+                
+
+                h4 {
+                    color: #FFFFFF
+                }
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: gray;
+                }
+
+            }
+        }
+
+    }
+    .logo {
+        width: 50%;
+        background-image: url("../assets/img/dc-logo-bg.png");
+    }
+
+
+}
 
 
 
