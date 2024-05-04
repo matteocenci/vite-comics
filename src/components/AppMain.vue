@@ -155,17 +155,19 @@ export default{
             li {
                 @include flex(column, left, left);
                 margin: 0 20px;
-                text-align: center;
+                width: 100px;
                 
-
+                
                 h4 {
                     color: #FFFFFF
+                    
+
                 }
                 a {
                     list-style-type: none;
                     text-decoration: none;
                     color: gray;
-                    margin: 0 10px;
+                    
                 }
 
             }
