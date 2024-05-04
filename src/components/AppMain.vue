@@ -84,6 +84,7 @@ export default{
 
             </div>
             <div class="logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
 
             </div>
         </section>
@@ -135,9 +136,11 @@ export default{
 
 .utilities {
     @include flex(row, left, center);
-    width: 100%;
+    
     background-image: url("../assets/img/footer-bg.jpg");
-    background-repeat:no-repeat;
+    
+    
+    background-repeat:i;
     
     
     
@@ -151,6 +154,8 @@ export default{
 
             li {
                 @include flex(column, left, left);
+                margin: 0 20px;
+                text-align: center;
                 
 
                 h4 {
@@ -160,16 +165,19 @@ export default{
                     list-style-type: none;
                     text-decoration: none;
                     color: gray;
+                    margin: 0 10px;
                 }
 
             }
         }
 
     }
-    .logo {
-        width: 50%;
-        background-image: url("../assets/img/dc-logo-bg.png");
+
+    .logo img{
+        width: 80%;
     }
+    
+    
 
 
 }
